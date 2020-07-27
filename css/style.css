@@ -40,9 +40,7 @@ header {
 
 footer {
     background-color: rgb(0, 255, 21);
-    height: 100px;
     text-align: center;
-    line-height: 100px;
 }
 
 .container {
@@ -129,36 +127,59 @@ a {
 }
 
 .banner {
-    height: 400px;
+    height: 300px;
     position: relative;
 }
 
+.banner :hover .banner-next,
+.banner :hover .banner-prev {
+    display: none;
+}
+
+.banner .banner-next i,
+.banner .banner-prev i {
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: rgb(219, 219, 219, .3);
+}
+
 .banner-next {
+    display: block;
     position: absolute;
     width: 15%;
     height: 100%;
     top: 0;
     right: 0px;
+    line-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-prev {
+    display: none;
     position: absolute;
     width: 15%;
     height: 100%;
     top: 0;
     left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 300px;
 }
 
 .banner-prev i {
-    text-align: right;
-    float: right;
+    /* text-align: right; */
+    /* float: right; */
 }
 
 .banner-next i,
 .banner-prev i {
-    line-height: 400px;
     font-size: 40px;
     color: white;
+    padding: 10px;
+    background-color: rgb(160, 160, 160);
 }
 
 .footer {
@@ -168,6 +189,7 @@ a {
 .show-4-sp {
     display: flex;
     flex-wrap: wrap;
+    margin: 40px 0;
 }
 
 .box-sp {
@@ -197,21 +219,26 @@ a {
 } */
 
 .title-sp {
-    padding: 20px 0;
+    /* padding: 20px 0; */
     font-size: 30px;
+    margin: 20px auto;
+    padding: 5px 0;
+    font-weight: 500;
+    border-bottom: 2px solid green;
 }
 
 .name-sp {
     font-size: 24px;
     position: absolute;
-    top: 100px;
-    left: 20px;
+    top: 90px;
+    left: 30px;
     font-weight: 500;
-    color: white;
+    color: rgb(255, 255, 255);
     width: 80%;
     margin: 0 auto;
-    border: solid 1px white;
+    border: solid 1px yellowgreen;
     border-radius: 30px;
+    background-color: rgba(235, 233, 233, 0.4);
     text-align: center;
     padding: 5px 10px;
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
@@ -219,6 +246,8 @@ a {
 
 .box-sp:hover .box-img h2 {
     background-color: yellowgreen;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
 }
 
 .uptotop {
@@ -268,4 +297,38 @@ a {
         transform: rotate(30deg);
         box-shadow: 0 0 0 20px rgba(128, 255, 0, 0), 0 0 0 20px rgba(128, 255, 0, 0.5);
     }
+}
+
+.whychoose {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px;
+}
+
+.whychoose h4 {}
+
+.whychoose p {
+    font-size: 20px;
+}
+
+.footer-box-col3 {
+    width: 32%;
+}
+
+.footer-box-col3 p {
+    font-size: 16px;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-box-col3:nth-child(2) {
+    margin: 0 2%;
+}
+
+.introduct {
+    margin: 20px 0;
+    /* padding: 20px 0; */
+    font-size: 20px;
 }
