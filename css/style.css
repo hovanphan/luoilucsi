@@ -115,6 +115,7 @@ a {
 
 .navbar-hien ul li {
     display: inline-block;
+
 }
 
 .navbar-hien ul li ul li {
@@ -122,7 +123,7 @@ a {
     z-index: 100;
 }
 
-.navbar-hien ul li a :hover li {
+.navbar-hien ul li ul a:hover li {
     display: block;
 }
 

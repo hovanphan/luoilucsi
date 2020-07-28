@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="SHORTCUT ICON" href="img/icon.jpg" type="image/x-icon" />
-
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detail.css">
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
@@ -98,24 +100,28 @@
             </div>
             <div class="ct-box-right ">
                 <h5 class="ct-title-box-chil">Information</h5>
-                <table>
+                <table border="1">
                     <tr>
                         <td>
                             <i class="fas fa-map-marker-alt"></i>
                         </td>
-                        <td>22 jhjh jhjh</td>
+                        <td>
+                            527/529 Bình Thới, phường 10, Quận 11, Thành phố Hồ Chí Minh</td>
                     </tr>
                     <tr>
                         <td>
                             <i class=" 	far fa-envelope"></i>
                         </td>
-                        <td>hh</td>
+                        <td>
+                            <a href="mailto:hovanphancoder@gmail.com">hovanphancoder@gmail.com</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>
                             <i class=" 	fas fa-phone-alt"></i>
                         </td>
-                        <td>0332519218</td>
+                        <td><a href="tel:0332519218">
+                            0332519218</a></td>
                     </tr>
 
                 </table>
@@ -151,6 +157,36 @@
             </div>
         </div>
     </footer>
+    <div class="uptotop " id="myBtn">
+        <i class='	fas fa-angle-double-up'></i>
+    </div>
+    <div class="call ">
+        <a href="tel:0332519218 "> <i class='fas  fas fa-phone-alt'></i></a>
+    </div>
+    <script src="./js/main.js "></script>
+    <script>
+        var banner = document.getElementById("img-banner");
+        var i = 1;
+        var timenext = setInterval(next, 5000);
+
+        function next() {
+            i++;
+            if (i > 3) {
+                i = 1;
+            }
+            banner.src = "./img/" + i + ".jpg ";
+
+        }
+
+        function prev() {
+            i--;
+            if (i < 1) {
+                i = 3;
+            }
+            banner.src = "./img/ " + i + ".jpg ";
+
+        }
+    </script>
 </body>
 
 </html>

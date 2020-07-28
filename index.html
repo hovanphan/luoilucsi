@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lưới Lực Sĩ &#8211; Bền Bỉ &#8211; Cho Nhà Nông Tỷ Tỷ</title>
     <link rel="SHORTCUT ICON" href="img/icon.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detail.css">
+
+
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
@@ -63,6 +68,7 @@
         <div class="danhmuc-menu">
             <i class="icon-danhmuc	fas fa-align-left"></i>
             <ul class="listmenu">
+
                 <li> fghj
                     <!-- <ul class="listmenu">
                         <li>ddd</li>
@@ -232,29 +238,9 @@
         <a href="tel:0332519218 "> <i class='fas  fas fa-phone-alt'></i></a>
     </div>
     <script src="./js/main.js "></script>
-    <script>
-        var banner = document.getElementById("img-banner");
-        var i = 1;
-        var timenext = setInterval(next, 5000);
-
-        function next() {
-            i++;
-            if (i > 3) {
-                i = 1;
-            }
-            banner.src = "./img/" + i + ".jpg ";
-
-        }
-
-        function prev() {
-            i--;
-            if (i < 1) {
-                i = 3;
-            }
-            banner.src = "./img/ " + i + ".jpg ";
-
-        }
-    </script>
+    <script src="./js/banner.js "></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 
 </html>

@@ -74,6 +74,11 @@
 
 .ct-box-right table tr td {
     padding-top: 30px;
+    height: 70px;
+}
+
+.ct-box-right table {
+    margin-top: 50px;
 }
 
 .ct-box-right table tr td:nth-child(1) {
@@ -88,6 +93,11 @@
     padding: 20px 0;
 }
 
+.ct-box-right table tr td:nth-child(2) a {
+    color: black;
+}
+
 .ct-box-right table tr td:nth-child(1):hover {
-    background-color: greenyellow;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
