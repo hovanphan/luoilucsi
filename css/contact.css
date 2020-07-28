@@ -10,11 +10,12 @@
 .ct-box-right {
     width: 50%;
     padding-left: 10px;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .contact {
     display: flex;
+    /* background: url(../img/3.jpg); */
 }
 
 .ct-box-left input {
@@ -69,4 +70,24 @@
     margin: 50px 0;
     box-sizing: border-box;
     border: 1px solid rgb(206, 206, 206);
+}
+
+.ct-box-right table tr td {
+    padding-top: 30px;
+}
+
+.ct-box-right table tr td:nth-child(1) {
+    padding: 20px 30px;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.ct-box-right table tr td:nth-child(2) {
+    padding: 20px 0;
+}
+
+.ct-box-right table tr td:nth-child(1):hover {
+    background-color: greenyellow;
 }
